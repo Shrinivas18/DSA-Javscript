@@ -9,6 +9,7 @@ var productExceptSelf = function (nums) {
   }
 
   let suffix = 1;
+
   for (let i = n - 1; i >= 0; i--) {
     answer[i] *= suffix;
     suffix *= nums[i];
